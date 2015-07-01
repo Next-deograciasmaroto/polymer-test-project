@@ -1,0 +1,22 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="dom-separated">
+	<style>
+		p {
+			color:orange;
+		}
+	</style>
+	<template>
+		
+		<p>this is a test component used with scripts outside the template. Also added custom styling to the elements inside this Shadow DOM
+			<content></content>
+		</p>
+		
+	</template>
+	<!--<script type="text/javascript" src="../elements-js/test.js"></script>-->
+	<script>
+		Polymer({
+			is: 	'dom-separated'
+		});
+	</script>
+</dom-module>
